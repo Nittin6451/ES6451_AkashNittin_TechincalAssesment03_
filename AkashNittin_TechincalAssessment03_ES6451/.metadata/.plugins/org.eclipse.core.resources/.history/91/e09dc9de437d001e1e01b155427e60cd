@@ -1,0 +1,11 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import org.junit.runner.RunWith;
+
+import io.cucumber.testng.CucumberOptions;
+
+public class RegisterRunner {
+
+@RunWith(Cucumber.class)
+@CucumberOptions(features ="src\\test\\resources\\Feature\\Register.feature",glue ="com.AkashNittin.TechincalAssessment03",pulgins = ""))
+}

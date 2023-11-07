@@ -1,0 +1,14 @@
+Feature: Regsitering into Demo Web Shop Application
+
+Scenario:
+	Given user is on hompage
+	When user clicks on Register 
+	Then user selects the gender
+	Then user enters the firstname
+	Then user enters the lastname
+	Then user enters the emailid
+	Then user enters the password
+	Then user enters the confirmpassword
+	Then user clicks the registerbutton
+	Then user gets the confirmation message
+	Then user clicks the logout

@@ -1,0 +1,48 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.support.PageFactory;
+
+public class RegisterAction {
+	WebDriver driver;
+	RegisterLocators locators = null;
+	
+	public RegisterAction() {
+		RegisterLocators locators = new RegisterLocators();
+		PageFactory.initElements(RegisterHelperClass.getDriver(), locators);
+	}
+	public void getMyAccount() {
+		locators.myaccount.click();
+	}
+	public void getGender() {
+		locators.gender.click();
+	}
+	public void setFirstName() {
+		locators.firstname.sendKeys(null);
+	}
+	public void setLastName() {
+		locators.lastname.sendKeys(null);
+	}
+	
+	public void getEmailid() {
+		locators.email.sendKeys(null);
+	}
+	public void getPassword() {
+		locators.password.sendKeys(null);
+	}
+	public void getConfirmationPassowrd() {
+		locators.confirmpassword.sendKeys(null);
+	}
+	public void setRgisterButton() {
+		locators.registerbutton.click();
+	}
+	public String getConfirmationMessage() {
+		return locators.confirmessage.getText();
+	}
+	public void getLogout() {
+		locators.logout.click();
+	}
+	
+	
+	
+}

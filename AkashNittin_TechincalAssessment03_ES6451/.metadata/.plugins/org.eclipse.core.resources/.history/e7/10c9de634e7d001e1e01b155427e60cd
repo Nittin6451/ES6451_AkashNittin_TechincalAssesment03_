@@ -1,0 +1,32 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import java.time.Duration;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class LoginUtilityClass {
+	
+	String strUserName,strPassword,strUrl;
+	public LoginUtil() {
+		login2();
+	}
+	public void login2(){
+	File file = new File("C:\\Users\\aricharddaniel\\eclipse-workspace\\Cucumber\\src\\test\\resources\\data.properties");
+	FileInputStream fileInput = null;
+	try {
+		fileInput = new FileInputStream(file);
+	}catch(FileNotFoundException e) {
+		e.printStackTrace();
+	}
+	Properties prop = new Properties();
+	try {
+		prop.load(fileInput);
+	}catch(IOException e) {
+		e.printStackTrace();
+	}
+	strUrl = prop.getProperty("url");
+	strUserName = prop.getProperty("username");
+	strPassword = prop.getProperty("password");
+ 
+	}

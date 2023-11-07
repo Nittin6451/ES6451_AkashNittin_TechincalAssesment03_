@@ -1,0 +1,29 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+
+public class RegisterLocators {
+	
+	
+	@FindBy(className="ico-register")
+	WebElement myaccount;
+	
+	@FindBy()
+	WebElement
+	
+	
+	@FindBy(id = "gender-male")
+	WebElement gender;
+	
+	@FindBy(id="FirstName")
+	WebElement firstname;
+	
+	@FindBy(id="LastName")
+	WebElement lastname;
+	
+	@FindBy(id = "Password")
+	WebElement password;
+	
+
+}

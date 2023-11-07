@@ -1,0 +1,20 @@
+#Feature: Logging into Demo Web Shop Application
+#
+#@ValidCredentials
+  #Scenario:Logging with valid credentials
+  #Given User is on the Home Page
+  #When clicks the Login
+   #Then entering the Email
+   #Then entring the password
+   #Then clicks the Login
+   #Then login is successfull
+   #
+ #
+  #@InvalidCredentials
+  #Scenario:  Logging with Invalid credentials
+    #Given launching the page DemoShop
+    #When click the log in
+    #Then entering the Invalid email 
+    #Then entering the Invalid password 
+    #Then clicks the Login 
+    #Then login is unsuccessfull

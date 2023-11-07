@@ -1,0 +1,15 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import org.openqa.selenium.WebDriver;
+
+public class RegisterAction {
+	WebDriver driver;
+	RegisterLocators locators = null;
+	
+	public RegisterAction() {
+		RegisterLocators locators = new RegisterLocators();
+	}
+	
+	
+	
+}

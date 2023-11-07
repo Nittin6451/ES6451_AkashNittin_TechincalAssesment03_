@@ -1,0 +1,32 @@
+package com.AkashNittin.TechincalAssessment03;
+
+public class RegisterLocators {
+	
+	
+	@FindBy(className="ico-register")
+	WebElement myaccount;
+	
+	@FindBy(id = "gender-male")
+	WebElement gender;
+	
+	@FindBy(id="FirstName")
+	WebElement firstname;
+	
+	@FindBy(id="LastName")
+	WebElement lastname;
+	
+	@FindBy(id = "Password")
+	WebElement password;
+	
+	@FindBy(id="ConfirmPassword")
+	WebElement confirmpassword;
+
+	@FindBy(id="register-button")
+	WebElement registerbutton;
+	
+	@FindBy(className = "result")
+	WebElement confirmessage;
+	
+	@FindBy(className = "ico-logout")
+	WebElement logout;
+}

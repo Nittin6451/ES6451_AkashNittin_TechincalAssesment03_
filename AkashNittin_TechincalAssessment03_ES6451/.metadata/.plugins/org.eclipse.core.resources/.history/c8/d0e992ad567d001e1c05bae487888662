@@ -1,0 +1,73 @@
+package com.AkashNittin.TechincalAssessment03;
+
+import io.cucumber.java.en.Given;
+import io.cucumber.java.en.Then;
+import io.cucumber.java.en.When;
+
+public class StepDefinitionforLogin {
+	
+	LoginAction action = new LoginAction();
+	LoginUtilityClass util = new LoginUtilityClass(); 
+
+	@Given("User is on the Home Page")
+	public void user_is_on_the_home_page() {
+	   HelperClass.openPage(util.strUrl);
+	}
+	@When("clicks the Login Homepage")
+	public void clicks_the_login_homepage() {
+	    action.login();
+	}
+
+
+	@Then("entering the Email")
+	public void entering_the_email() {
+		action.setEmail(util.strEmail);
+	}
+
+	@Then("entring the password")
+	public void entring_the_password() {
+		action.setPassword(util.strPassword);
+	}
+
+	@Then("clicks the LoginButton")
+	public void clicks_the_login_button(){
+	   action.logbutton();
+	}
+
+	@Then("login is successfull")
+	public void login_is_successfull() {
+	    
+	}
+
+	@Given("launching the page DemoShop")
+	public void launching_the_page_demo_shop() {
+		HelperClass.openPage(util.strUrl);
+	}
+	
+	@When("clicks the Login in Hompage2")
+	public void clicks_the_login_in_hompage2() {
+		 action.login();
+	}
+
+	@When("click the log in")
+	public void click_the_log_in() {
+	   
+	}
+
+	@Then("entering the <{string}>")
+	public void entering_the(String string) {
+	  
+	}
+	@Then("clicks the LoginButton2")
+	public void clicks_the_login_button2() {
+		 action.login();
+	}
+
+
+	@Then("login is unsuccessfull")
+	public void login_is_unsuccessfull() {
+	    
+	}
+
+
+}

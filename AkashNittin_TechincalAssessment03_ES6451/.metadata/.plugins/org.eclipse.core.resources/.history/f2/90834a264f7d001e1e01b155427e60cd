@@ -1,0 +1,11 @@
+Feature: Logging into Demo Web Shop Application
+
+Scenario: 
+
+	Given user is in the Homepage
+	When user clicks the Login
+	Then user enters the Email
+	Then user enters the Password
+	Then user clicks the LogIN
+	Then user Login is successfull
+	
